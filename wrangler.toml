@@ -1,0 +1,17 @@
+name = "bot-clan-rang-3"
+main = "index.js"
+compatibility_date = "2026-05-23"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["0 17 * * *", "5 17 * * *", "10 17 * * *", "15 17 * * *", "20 17 * * *", "25 17 * * *"]
+
+[vars]
+TELEGRAM_BOT_TOKEN = "8659338389:AAHAqz7ldUPYgC-G7zWnREDCTfYqX-ap9Fg"
+FIREBASE_LOGIN_URL = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBW1ZbMiUeDZHYUO2bY8Bfnf5rRgrQGPTM"
+RANK_URL = "https://us-central1-cp-multiplayer.cloudfunctions.net/SetUserRating4"
+ADMIN_CHAT_ID = "7729315191"
+
+[[kv_namespaces]]
+binding = "ACCOUNTS_KV"
+id = "90d21a2b6950466c8a81957cdfbd3c1b"
